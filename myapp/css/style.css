@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: auto;
+  border: 1px #000 solid;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.header {
+  margin-bottom: 1em;
+}
+
+/* Manage */
+.cards-table {
+  margin-bottom: 1em;
+}
+
+.add-cards-form {
+  margin-bottom: 1em;
+}
+
+/* Manage, Learn */
+.controls {
+  margin-bottom: 1em;
+}
+
+/* Learn */
+
+.card-stage {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.card {
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+  margin-bottom: 1em;
+  border: 1px olive solid;
+}
+
+/* Generics */
+.align-right {
+  text-align: right;
+};

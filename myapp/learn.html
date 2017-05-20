@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Benjamin Wiengarn">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lernen</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+  </head>
+  <body data-js-context="learn">
+    <div class="container">
+      <header class="header">
+        <ul class="nav nav-tabs">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="manage.html">Verwalten</a></li>
+          <li class="active"><a href="#">Lernen</a></li>
+        </ul>
+      </header>
+      <main>
+        <div class="js-finished-message">Du hast alle Karten durchgesehen.</div>
+        <div class="controls">
+          <button class="js-start-round-button">Beginn</button>
+          <button class="js-end-round-button">Beenden</button>
+        </div>
+        <div class="js-card-stage card-stage">
+          <div>Karte: <span class="js-cards-current"></span>/<span class="js-cards-total"></span></div>
+          <div class="js-card card well well-lg">
+            <div class="js-card-front"></div>
+            <div class="js-card-back"></div>
+          </div>
+          <div>
+            <button class="js-confirm-button">Ja</button>
+            <button class="js-turn-card-button">Umdrehen</button>
+            <button class="js-deny-button">Nein</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/lockr-0.8.2.js"></script>
+    <script src="js/flashcards.js"></script>
+  </body>
+</html>

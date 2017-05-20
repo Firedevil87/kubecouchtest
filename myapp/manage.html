@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Benjamin Wiengarn">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verwalten</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+  </head>
+  <body data-js-context="manage">
+    <div class="container">
+      <header class="header">
+        <ul class="nav nav-tabs">
+          <li><a href="index.html">Start</a></li>
+          <li class="active"><a href="">Verwalten</a></li>
+          <li><a href="learn.html">Lernen</a></li>
+        </ul>
+      </header>
+      <main>
+        <div class="controls">
+          <button class="js-add-card-button">Hinzufügen</button>
+        </div>
+
+        <form class="js-add-card-form add-cards-form">
+          <fieldset>
+            <legend>Eine neue Karte anlegen</legend>
+            <div>
+              <label for="front">Vorderseite</label>
+              <input id="front" class="js-add-card-front-input" type="text" name="front" />
+            </div>
+            <div>
+              <label for="back">Rückseite</label>
+              <input id="back" class="js-add-card-back-input" type="text" name="back" />
+            </div>
+            <div>
+              <button class="js-add-card-submit-button">Speichern </button>
+            </div>
+          </fieldset>
+        </form>
+
+        <div>
+          <table class="js-cards-table table table-striped cards-table">
+            <thead>
+              <tr>
+                <th>Vorderseite</th>
+                <th>Rückseite</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div class="align-right">Karten: <span class="js-cards-count"></span></div>
+        </div>
+
+        <div>
+          <button class="js-load-demo-data">Demodaten laden</button>
+          <button class="js-reset-data">Daten löschen</button>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/lockr-0.8.2.js"></script>
+    <script src="js/flashcards.js"></script>
+  </body>
+</html>
